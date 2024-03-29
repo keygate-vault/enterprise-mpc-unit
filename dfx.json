@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "enterprise_mpc_wallet_backend": {
+      "candid": "src/enterprise_mpc_wallet_backend/enterprise_mpc_wallet_backend.did",
+      "package": "enterprise_mpc_wallet_backend",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
