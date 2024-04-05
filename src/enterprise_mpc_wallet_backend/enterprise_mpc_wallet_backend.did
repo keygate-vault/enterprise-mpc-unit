@@ -1,3 +1,5 @@
-service : {
-    "greet": (text) -> (text) query;
-}
+type PublicKeyReply = record { public_key : blob };
+type Result = variant { Ok : PublicKeyReply; Err : text };
+type Result_1 = variant { Ok : SignatureReply; Err : text };
+type SignatureReply = record { signature : blob };
+service : { public_key : () -> (Result); sign : (blob) -> (Result_1) }
