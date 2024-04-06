@@ -58,7 +58,7 @@ pub enum EcdsaCurve {
 async fn public_key() -> Result<PublicKeyReply, String> {
     let key_id = EcdsaKeyId {
         curve: EcdsaCurve::Secp256k1,
-        name: "dfx_test_key".to_string(),
+        name: "key_1".to_string(),
     };
     let ic_canister_id = "aaaaa-aa";
     let ic = CanisterId::from_str(&ic_canister_id).unwrap();
